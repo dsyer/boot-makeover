@@ -6,8 +6,11 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import org.springframework.stereotype.Component;
+
 @Path("/hello")
 @XmlRootElement
+@Component
 public class HelloService {
 
     @GET
